@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Suren Kochkonyan](https://up.htmlacademy.ru/htmlcss/18/user/495701).
-* Наставник: [Александр Собакарь] (https://htmlacademy.ru/profile/id128451).
+* Наставник: [Александр Собакарь](https://htmlacademy.ru/profile/id128451).
 
 ---
 
