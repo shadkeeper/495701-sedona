@@ -1,12 +1,106 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
   </head>
+
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class-"main-header-logo">
+          <img scr="img/index-logo.svg" alt="Логотип Седона">
+        </a>
+        <div class="site-navigation-div">
+          <ul class="site-navigation">
+            <li><a href="index.html">Информация</a></li>
+            <li><a href="photo-and-video.html">Фото и видео</a></li>
+            <li><a href="site-map.html">Карта сайта</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+
+      <section class="welcome">
+        <img src="img/welcome.svg" alt="Добро пожаловать в Седону">
+        <h1 class="visually-hidden">Седона</h1>
+          <h2>Cедона - небольшой городок в Аризоне, Заслуживающий большего!</h2>
+          <p class="under-h1-h2">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </section>
+
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+          <ul class="advantage-list">
+            <li class="advantage">Настоящий городок</li>
+            <li class="advantage">Мост дьявола</li>
+            <li class="advantage">Небольшая площадь</li>
+            <li class="advantage">Красивая дорога</li>
+            <li class="advantage">Мало туристов</li>
+              <li class="advantage">
+                <ul class="more-advantages">
+                  <li class="more-advantage">Жилье</li>
+                  <li class="more-advantage">Еда</li>
+                  <li class="more-advantage">Сувениры</li>
+                </ul>
+              </li>
+            </ul>
+      </section>
+
+      <section class="hotel-seach">
+        <h1 class="interested">Заинтересовались ?</h1>
+          <p class="under-h1-h2">Укажите предполагаемые даты поездки, и мы покажем Вам лучшее предложения гостиниц в Седоне</p>
+          <form class="hotel-seach-form" action="" method="get" id="seach-form-index">
+            <h2><button class="pop-up-form">Поиск гостиницы в Седоне</button></h2>
+            <div>
+              <label class="post-fields" for="arrival-date-field">Дата заезда:
+                <input type="date" name="arrival-date" id="arrival-date-field">
+              </label><br>
+              <label class="post-fields" for="departure-date-field">Дата выезда:
+                <input type="date" name="departure-date" id="departure-date-field">
+              </label><br>
+              <label class="post-fields" for="grownups-field">Взрослые:
+                <input type="number" name="grownups" id="grownups-field" min="1" value="1" step="1" max="10">
+              </label>
+              <label class="post-fields" for="chiildren-field">Дети:
+                <input type="number" name="chiildren" id="chiildren-field" min="0" value="0" step="1" max="10">
+              </label><br>
+              <label class="seach" for="seach-buuton-field">
+                <input type="submit" name="seach-button" id="seach-button-field" value="Найти">
+              </label>
+            </div>
+          </form>
+      </section>
+
+      <section>
+        <h2 class="visually-hidden">Карта Седоны</h2>
+        <img src="img/index-map.svg">
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="visit">
+        <a class="visit-sedona" href="#">#VISITSEDONA</a>
+      </div>
+
+      <div class="footer-social">
+        <a class="social-button" href="#">Вконтакте</a>
+        <a class="social-button" href="#">Фейсбук</a>
+        <a class="social-button" href="#">Инстаграм</a>
+      </div>
+
+      <p class="footer-copyright">
+          <b>Разработано:</b>
+          <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      </p>
+    </footer>
 
   </body>
 </html>
