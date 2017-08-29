@@ -6,6 +6,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript" src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
 
   <body>
@@ -13,9 +14,9 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class-"main-header-logo">
-          <img scr="img/logo-sedona.png" alt="Логотип Седона">
+          <img scr="http://placehold.it/150x100" alt="Логотип Седона">
         </a>
-        <div class="site-navigation-div">
+        <div class="site-navigation-block">
           <ul class="site-navigation">
             <li><a href="index.html">Информация</a></li>
             <li><a href="photo-and-video.html">Фото и видео</a></li>
@@ -30,7 +31,7 @@
 
       <section class="hotel-filter-input">
         <h2 class="visually-hidden">Поиск отеля Седона</h2>
-        <form class="hotel-filter" action="" method="get" oninput="costminoutput.value=cost.value" id="filter-form-hotels">
+        <form class="hotel-filter" action="" method="get" id="filter-form-hotels">
           <fieldset class="fieldset-infrastructure">
             <legend>Инфраструктура:</legend>
             <ul>
@@ -71,20 +72,29 @@
               </li>
             </ul>
           </fieldset>
-
-          <fieldset class="fieldset-hotel-cost">
-            <legend>Стоимость в сутки (Р):</legend>
-            <label class="hotel-cost" for="cost-field">
-              <div class="min-cost">от <output name="costminoutput"></output></div>
-              <div class="max-cost">до 5000</div>
-              <input type="range" name="cost" min="0" max="5000" step="1000" value="0" id="cost-field">
-            </label>
-            <label class="show" for="show-button-field">
-              <input type="submit" name="show-button" id="show-button-field" value="Показать">
-            </label>
-          </fieldset>
         </form>
-      </section>
+
+          <div class="filter-range">
+            <div class="filter-range-title">Стоимость в сутки (р):</div>
+              <div class="price-controls">
+                <label class="min-price">от
+                  <input type="text" name="min-price"  value="0">
+                </label>
+                <label class="max-price">до
+                  <input type="text" name="max-price" value="3000">
+                </label>
+              </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="button-transparent" type="submit">Показать</button>
+          </div>
+
+        </section>
 
       <section class="hotel-seach-result">
         <h2>Найдено: 3</h2>
@@ -103,7 +113,7 @@
         <ul class="hotel-list">
           <li class="hotel-name">
             <div class="hotel-left-side">
-              <img src="img/amara-resort-spa.jpeg" alt="Гостиница AMARA RESORT &#38; SPA">
+              <img class="hotel-images" src="img/amara-resort-spa.jpeg" alt="Гостиница AMARA RESORT &#38; SPA">
               <p>AMARA RESORT &#38; SPA</p>
               <a class="button-detail" href="hotels/amara-resort-spa.html">Подробнее</a>
               <a class="button-booking" href="booking.html">Забронировать</a>
@@ -116,7 +126,7 @@
             </div>
           </li>
           <li class="hotel-name">
-            <img src="img/desert-quail-inn.jpeg" alt="Мотель DESERT QUAIL INN">
+            <img class="hotel-images" src="img/desert-quail-inn.jpeg" alt="Мотель DESERT QUAIL INN">
             <div class="hotel-left-side">
               <p>DESERT QUAIL INN</p>
               <span>Гостиница от 4000 Р.</span>
@@ -131,7 +141,7 @@
             </div>
           </li>
           <li class="hotel-name">
-            <img src="img/villas-at-poco-diablo.jpeg" alt="Апартаменты VILLAS AT POCO DIABLO">
+            <img class="hotel-images" src="img/villas-at-poco-diablo.jpeg" alt="Апартаменты VILLAS AT POCO DIABLO">
             <div class="hotel-left-side">
               <p>VILLAS AT POCO DIABLO</p>
               <a class="button-detail" href="hotels/villas-at-poco-diablo.html">Подробнее</a>
