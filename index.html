@@ -6,6 +6,7 @@
     <title>Седона</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/range.css">
     <script type="text/javascript" src="js/script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
@@ -14,13 +15,15 @@
 
     <header class="main-header">
       <nav class="main-navigation">
-        <a class-"main-header-logo">
-          <img scr="img/logo-sedona.png" alt="Логотип Седона" width="137">
-        </a>
         <div class="site-navigation-block">
           <ul class="site-navigation">
             <li><a href="index.html">Информация</a></li>
             <li><a href="photo-and-video.html">Фото и видео</a></li>
+            <li>
+              <a href="index.html" class="main-header-logo">
+                <img src="img/logo-sedona.png" alt="Логотип Седона" width="137" width="70">
+              </a>
+            </li>
             <li><a href="site-map.html">Карта сайта</a></li>
             <li><a href="hotels.html">Гостиницы</a></li>
           </ul>
@@ -31,57 +34,70 @@
     <main class="container">
 
       <section class="welcome">
-        <img src="img/background-photo.jpg" alt="Добро пожаловать в Седону">
+        <div class="welcome-image">
+          <img src="img/background-photo.jpg" alt="Добро пожаловать в Седону" width="1200">
+        </div>
         <h1 class="visually-hidden">Седона</h1>
-          <h2>Cедона - небольшой городок в Аризоне, Заслуживающий большего!</h2>
-          <p class="5-advantages">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <div class="five-advantages">
+            <h2>Cедона - небольшой городок в Аризоне,<br> Заслуживающий большего!</h2>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          </div>
       </section>
 
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
           <ul class="advantage-list">
             <li class="advantage">
-              <h2>Настоящий городок</h2>
+              <h2>Настоящий<br> городок</h2>
               <p>- №1 -</p>
-              <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+              <p>Седона - не аттракцион для туристов,<br> там течет своя жизнь</p>
             </li>
             <li class="advantage">
-              <h2>Мост дьявола</h2>
+              <img src="img/real-town.jpg" alt="Настоящий городок" width="800">
+            </li>
+            <li class="more-advantages">
+              <ul class="more-advantages-list">
+                <li class="more-advantage">
+                  <img src="img/icon-1.svg" alt="Жилье">
+                  <h2>Жилье</h2>
+                  <p>Рекоендуем пожить в настоящем<br> мотеле, все как в кино!</p>
+                </li>
+                <li class="more-advantage">
+                  <img src="img/icon-3.svg" alt="Еда">
+                  <h2>Еда</h2>
+                  <p>Всегда заказывайте фирменный бургер,<br> Вы не разочаруетесь!</p>
+                </li>
+                <li class="more-advantage">
+                  <img src="img/icon-2.svg" alt="Сувениры">
+                  <h2>Сувениры</h2>
+                  <p>Не только китайского, но местного<br> производства!</p>
+                </li>
+              </ul>
+            </li>
+            <li class="advantage">
+              <img src="img/real-canyon.jpg" alt="Настоящий городок" width="800">
+            </li>
+            <li class="advantage">
+              <h2>Там есть<br> Мост дьявола</h2>
               <p>- №2 -</p>
-              <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+              <p>Да, по нему можно пройти! Если конечно<br> Вы осмелитесь</p>
             </li>
             <li class="advantage">
-              <h2>Небольшая площадь</h2>
+              <h2>Небольшая<br> площадь</h2>
               <p>- №3 -</p>
-              <p>Все достопримечательности находятся очень близко</p>
+              <p>Все достопримечательности<br> находятся очень близко</p>
             </li>
             <li class="advantage">
-              <h2>Красивая дорога</h2>
+              <h2>Красивая<br> дорога</h2>
               <p>- №4 -</p>
-              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
             </li>
             <li class="advantage">
-              <h2>Мало туристов</h2>
+              <h2>Мало<br> туристов</h2>
               <p>- №5 -</p>
-              <p>Большинство едет в Гранд Каньон и толпится там</p>
+              <p>Большинство едет в Гранд Каньон и<br> толпится там</p>
             </li>
-              <li class="more-advantages">
-                <ul class="more-advantages-list">
-                  <li class="more-advantage">
-                    <h2>Жилье</h2>
-                    <p>Рекоендуем пожить в настоящем мотеле, все как в кино!</p>
-                  </li>
-                  <li class="more-advantage">
-                    <h2>Еда</h2>
-                    <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
-                  </li>
-                  <li class="more-advantage">
-                    <h2>Сувениры</h2>
-                    <p>Не только китайского, но местного производства!</p>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+          </ul>
       </section>
 
       <section class="hotel-seach">
@@ -123,9 +139,23 @@
       </div>
 
       <div class="footer-social">
-        <a class="social-button" href="#">Вконтакте</a>
-        <a class="social-button" href="#">Фейсбук</a>
-        <a class="social-button" href="#">Инстаграм</a>
+        <ul class="social-buttons">
+          <li class="social-button">
+            <a class="twitter" href="#twit">
+              <img src="img/twitter.svg" alt="Twitter">
+            </a>
+          </li>
+          <li class="social-button">
+            <a class="facebook" href="#fb">
+
+            </a>
+          </li>
+          <li class="social-button">
+            <a class="youtube" href="#yt">
+              
+            </a>
+          </li>
+        </ul>
       </div>
 
       <div class="footer-copyright">
